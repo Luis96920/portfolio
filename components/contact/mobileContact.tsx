@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-import Twitter from "../../assets/twitter.svg";
 import LinkedIn from "../../assets/linkedin.svg";
 
 import { motion } from "framer-motion";
@@ -12,7 +11,7 @@ export default function MobileSocials() {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/lekipising"
+        href="https://github.com/luis96920"
         className="flex items-center text-center text-[15px] underline"
       >
         Check out more of my projects on GitHub
@@ -27,26 +26,7 @@ export default function MobileSocials() {
           transition={{ ease: "easeIn", duration: 0.2 }}
           target="_blank"
           rel="noreferrer"
-          href="https://twitter.com/lekipising"
-          className="flex h-full items-center justify-center px-4"
-        >
-          <Image
-            src={Twitter}
-            height="30"
-            width="30"
-            alt="Twitter"
-            className="cursor-pointer"
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
-        </motion.a>
-        <motion.a
-          whileTap={{ scale: 1.1 }}
-          transition={{ ease: "easeIn", duration: 0.2 }}
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/liplan0lekipising/"
+          href="https://www.linkedin.com/in/liplan0luis saavedra/"
           className="flex h-full items-center justify-center px-4"
         >
           <Image
@@ -57,8 +37,9 @@ export default function MobileSocials() {
             className="cursor-pointer"
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </motion.a>
       </div>
     </div>

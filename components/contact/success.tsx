@@ -24,7 +24,7 @@ export default function SuccessMessage({
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/lekipising"
+        href="https://github.com/luis96920"
         className="w-max rounded-[8px] bg-dark-300 px-4 py-2 text-sm"
       >
         View my GitHub profile

@@ -1,124 +1,114 @@
 import { Project } from ".";
 
-import NextIcon from "../../assets/next.svg";
-import StyledcIcon from "../../assets/styledc.svg";
-import TailwindIcon from "../../assets/tailwind.svg";
-import ReduxIcon from "../../assets/redux.svg";
-import NestJsIcon from "../../assets/nest.svg";
-
 export const projects: Project[] = [
   {
-    title: "Navu360",
+    title: "Zetabot",
     description:
-      "Built for businesses. Create, manage, and scale custom training programs effortlessly. Navu360 empowers companies to simplify their training operations and achieve quantifiable development",
+      "Zetabot is a versatile AI chatbot that optimizes customer support operations, reducing costs by up to 60%. With 24/7 instant assistance and personalized interactions, businesses can enhance efficiency, productivity, and customer trust.",
     features: [
-      "Single Sign On with Auth0",
-      "Checkout and Subscription by PayStack",
-      "Custom Domain with Vercel and Cloudflare",
-      "Email Marketing with SendGrid",
-      "Fully featured B2B SaaS platform",
-      "SEO Optimized",
+      " Automating repetitive tasks.",
+      "Providing instant assistance 24/7.",
+      "Ensuring consistent and dependable responses.",
+      "Offering exceptional customer service across multiple communication channels.",
     ],
-    image:
-      "https://res.cloudinary.com/dpnbddror/image/upload/v1699979124/liplan/Screenshot_from_2023-11-14_19-25-16_znvvkv.png",
-    link: "https://navu360.com",
+    image: "/portfolio/portfolio-chatbot-business.png",
+    link: "https://zetabot.co/",
     technologies: [
       {
-        svg: NextIcon,
-        text: "Next JS",
+        text: "LLM",
       },
       {
-        svg: TailwindIcon,
-        text: "Tailwind CSS",
+        text: "Lang Chain",
       },
       {
-        svg: ReduxIcon,
-        text: "Redux Toolkit",
+        text: "Streamlit",
+      },
+      {
+        text: "Python",
+      },
+      {
+        text: "RAG",
+      },
+      {
+        text: "React.js",
+      },
+      {
+        text: "Next.js",
       },
     ],
     status: "Active",
   },
   {
-    title: "Karent App",
+    title: "Imgcreator",
     description:
-      "A modern social media web application designed for university/college students to share ideas, stay connected and foster communities",
+      "Imgcreator.ai is an AI-powered image tool that generates images based on text descriptions and allows users to erase parts of an image using text.",
     features: [
-      "Oauth with Google",
-      "Push Notifications with Firebase",
-      "Customizable User Profiles and Interests",
-      "Topic-based feed",
-      "Cloudinary CDN for storage",
+      " Generates images based on text descriptions.",
+      " Ideal for creating photo-realistic stock photos.",
+      "Editing photos using text descriptions.",
+      "Creating illustrations for presentations, posters, websites, children's books and more.",
+      "Allows users to erase parts of an image using text descriptions.",
     ],
-    image:
-      "https://res.cloudinary.com/dpnbddror/image/upload/v1699979294/liplan/Screenshot_from_2023-11-14_19-28-02_vkrzfv.png",
-    link: "https://karent.app/welcome",
+    image: "/portfolio/portfolio-image-gen1.png",
+    link: "https://www.zmo.ai/",
     technologies: [
       {
-        svg: NextIcon,
-        text: "Next JS",
+        text: "Python",
       },
       {
-        svg: StyledcIcon,
-        text: "Styled Components",
+        text: "LLM",
       },
       {
-        svg: NestJsIcon,
-        text: "Nest JS",
+        text: "RAG",
+      },
+      {
+        text: "Open API",
+      },
+      {
+        text: "AWS",
+      },
+      {
+        text: "Next.js",
       },
     ],
     status: "On Hold",
   },
   {
-    title: "CourierPal App",
+    title: "VozPod",
     description:
-      "An ordering web app that connects shoppers and travelers who assist each other in getting items across the world",
+      "Vozpod is an AI tool that generates short audiobooks on any topic, offering a break from screen time and aiding those feeling visually overwhelmed or emotionally unbalanced.",
     features: [
-      "Secure User Authentication and Authorization",
-      "Real-time Order Tracking",
-      "Error Logging and Monitoring with Sentry",
-      "Integration with RESTful API",
+      "Audiobook generation.",
+      " Text input.",
+      "Links support.",
+      "Service privacy terms.",
     ],
     image:
-      "https://res.cloudinary.com/dpnbddror/image/upload/v1683393573/liplan/paint_water_liquid_85058_1280x800_r9fa2d.jpg",
-    link: "https://courierpal.vercel.app/",
+      "/portfolio/portfolio-text-voice.png",
+    link: "https://www.vozpod.com/",
     technologies: [
       {
-        svg: NextIcon,
-        text: "Next JS",
+        text: "Python",
       },
       {
-        svg: StyledcIcon,
-        text: "Styled Components",
+        text: "LLama Index",
       },
       {
-        svg: NestJsIcon,
-        text: "Nest JS",
-      },
-    ],
-    status: "Completed",
-  },
-  {
-    title: "Maskani App",
-    description:
-      "Augmented reality web platform that recreates the life-like experience of walking inside a real-sized house in any location",
-    features: [
-      "Responsive Design for Mobile and Desktop",
-      "Accessibility Compliance for ADA Standards",
-      "Minimalistic Layout to Reduce Cognitive Load",
-    ],
-    image:
-      "https://res.cloudinary.com/dpnbddror/image/upload/v1685812969/bg_main_df77us.jpg",
-    link: "https://maskani-app.vercel.app",
-    technologies: [
-      {
-        svg: NextIcon,
-        text: "Next JS",
+        text: "TTS",
       },
       {
-        svg: TailwindIcon,
+        text: "Librosa",
+      },
+      {
+        text: "Open API",
+      },
+      {
+        text: "React.js",
+      },
+      {
         text: "Tailwind CSS",
       },
     ],
     status: "Completed",
-  },
+  }
 ];

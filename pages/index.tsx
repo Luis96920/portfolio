@@ -52,17 +52,6 @@ export default function Home() {
 
   return (
     <>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
       <main
         ref={carouselRef}
         className="no-scrollbar relative z-20 m-auto mt-[2vh] h-[95vh] w-[95vw] overflow-y-scroll rounded-[8px] border-[1px] border-gray-200 bg-dark-200 transition-all duration-300 ease-in md:mt-[5vh] md:h-[90vh] md:w-[90vw]"

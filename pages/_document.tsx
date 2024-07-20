@@ -27,17 +27,17 @@ export default class MyDocument extends Document {
           {/* og meta */}
           <meta
             property="og:title"
-            content="Liplan Lekipising - Software Engineer"
+            content="Luis Saavedra - Software Engineer"
           />
-          <meta property="og:site_name" content="Liplan Lekipising Portfolio" />
+          <meta property="og:site_name" content="Luis Saavedra Portfolio" />
           <meta property="og:locale" content="en_US" />
-          <meta property="og:url" content="https://lekipising.com" />
+          <meta property="og:url" content="https://luis96920.com" />
           <meta
             property="og:image"
             content="https://res.cloudinary.com/dpnbddror/image/upload/c_scale,w_1200/v1697209158/liplan/Screenshot_from_2023-10-13_17-59-04_vzuiqg.png"
           />
           <meta property="og:type" content="summary" />
-          <link rel="canonical" href="https://lekipising.com" />
+          <link rel="canonical" href="https://luis96920.com" />
           <meta
             property="og:description"
             content="I craft interactive and beautiful web apps, and I love what I do. With every line of code, I strive to make the web a better place. View my projects"
@@ -47,12 +47,12 @@ export default class MyDocument extends Document {
             content="I craft interactive and beautiful web apps, and I love what I do. With every line of code, I strive to make the web a better place. View my projects"
           />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="twitter:domain" content="https://lekipising.com" />
-          <meta property="twitter:url" content="https://lekipising.com" />
-          <meta name="twitter:creator" content="@lekipising" />
+          <meta property="twitter:domain" content="https://luis96920.com" />
+          <meta property="twitter:url" content="https://luis96920.com" />
+          <meta name="twitter:creator" content="@luis96920" />
           <meta
             name="twitter:title"
-            content="Liplan Lekipising - Software Engineer"
+            content="Luis Saavedra - Software Engineer"
           />
           <meta
             name="twitter:description"
@@ -70,12 +70,12 @@ export default class MyDocument extends Document {
           />
           <meta
             name="apple-mobile-web-app-title"
-            content="Liplan Lekipising - Software Engineer"
+            content="Luis Saavedra - Software Engineer"
           />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta
             name="application-name"
-            content="Liplan Lekipising - Software Engineer"
+            content="Luis Saavedra - Software Engineer"
           />
           <meta name="format-detection" content="telephone=no" />
           <meta name="msapplication-TileColor" content="#011627" />

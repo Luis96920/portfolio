@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Liplan Lekipising - Software Engineer</title>
+        <title>Luis Saavedra- AI & Web developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />

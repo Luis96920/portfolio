@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 
 import { motion } from "framer-motion";
 import useIntersect from "../../utils/useIntersectionObserver";
-
 export default function AboutMe({
   setIsVisible,
 }: {
@@ -31,11 +30,11 @@ export default function AboutMe({
     <motion.section
       id="_about-me"
       ref={observeRef}
-      className="relative mt-8 cursor-default bg-dark-100/20 p-6 text-[13px] font-medium leading-[150%] text-gray-100 shadow-lg transition-all duration-300 ease-in hover:bg-dark-100/40 md:relative md:m-auto md:mb-32 md:mt-0 md:w-max  md:rounded-[30px] md:p-16 md:text-[16px]"
+      className="relative mt-8 max-w-full cursor-default  bg-dark-100/20 p-6 px-8 text-[13px] font-medium leading-[150%] text-gray-100 shadow-lg transition-all duration-300 ease-in hover:bg-dark-100/40 md:relative md:m-auto md:mb-32 md:mt-0 md:w-[800px] md:rounded-[30px] md:p-16 md:text-[16px]"
     >
       <div className="absolute -top-12 left-1/2 w-[315px] -translate-x-1/2">
-        <motion.h2 className="heading-gradient text-lg font-semibold text-white">
-          From Code to Coffee: About Me
+        <motion.h2 className="heading-gradient text-center text-lg font-semibold text-white">
+          About Me
         </motion.h2>
         <motion.div
           initial={{ width: 0 }}
@@ -45,63 +44,69 @@ export default function AboutMe({
         />
       </div>
       <br />
+      <div className="text-wrap">
+        I am a dedicated and innovative AI and Full Stack Developer with
+        extensive experience in developing cutting-edge AI solutions and
+        building robust, scalable web applications.
+        <br />
+        My expertise spans across a diverse range of technologies, including
+        large language models (LLMs), Langchain, LLaMa, chatbots, ChatGPT,
+        Retrieval-Augmented Generation (RAG), React.js, Next.js, and the MERN
+        stack. <br />
+        And that's not all, as a professional who believes in providing the best
+        quality service, I can guarantee you error-free work as well as
+        unlimited revisions to ensure your utmost satisfaction. <br />
+        Please contact me. I will not disappoint you.
+      </div>
 
-      <p className="transition-all duration-300 !leading-loose ease-in hover:text-white/70">
-        4+ years of frontend mastery have sculpted me into a craftsmanship <br className="md:block hidden" /> who thrives on creating seamless, visually stunning interfaces.<br /><br /> What sets me apart? - My holistic approach as an all-round software engineer<br className="md:block hidden" /> and a seasoned team lead, guiding squads through frontend challenges<br className="md:block hidden" /> and beyond.
-      </p>
-      <br />
-      <p></p>
-      <p className="transition-all duration-300 ease-in hover:text-white/70">
-        If you seek transformative solutions, consulting, or mentorship,{" "}
-        <br className="hidden md:block" />
-        let&apos;s connect!
-      </p>
       <br />
       <p className="transition-all duration-300 ease-in hover:text-white/70">
-        I build awesome products using:
+        My major skill:
       </p>
       <div className="grid w-full grid-cols-2 gap-1 gap-x-5 pl-4 md:grid-cols-3">
         <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
-          Next.js
+          LLM
         </p>
         <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
-          React
+          Prompt
         </p>
         <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
-          TypeScript
+          Lang chain
         </p>
         <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
-          Tailwind CSS
+          Chatbot
         </p>
         <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
-          AWS
+          ChatGPT
         </p>
         <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
-          GraphQL
+          Pine cone
+        </p>
+        <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
+          Generative AI
+        </p>
+        <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
+          RAG
         </p>
       </div>
       <div className="mt-6 flex items-center gap-4">
         <span className="text-xs">Others:</span>
-        <p className="flex gap-1 text-xs text-gray-100">
-          <span className="text-yellow">Git</span>
-          &#x2022;
-          <span className="text-yellow">Redux Toolkit</span>
-          &#x2022;
-          <span className="text-yellow">Java</span>
-          &#x2022;
+        <p className="flex flex-wrap gap-1 text-xs text-gray-100">
           <span className="text-yellow">Python</span>
           &#x2022;
-          <span className="text-yellow">Jest</span>
+          <span className="text-yellow">Git</span>
           &#x2022;
-          <span className="text-yellow">CI/CD</span>
+          <span className="text-yellow">React.js</span>
           &#x2022;
-          <span className="text-yellow">Nest JS</span>
+          <span className="text-yellow">Next.js</span>
           &#x2022;
-          <span className="text-yellow">Sass</span>
+          <span className="text-yellow">Node.js</span>
           &#x2022;
-          <span className="text-yellow">SEO</span>
+          <span className="text-yellow">MongoDB</span>
           &#x2022;
-          <span className="text-yellow">Web Perf</span>
+          <span className="text-yellow">MySQL</span>
+          &#x2022;
+          <span className="text-yellow">VectorDB</span>
         </p>
       </div>
     </motion.section>

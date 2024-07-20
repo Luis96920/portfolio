@@ -1,15 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import ShowRealTimeMessage from "./code";
 import ContactForm from "./form";
-import MobileSocials from "./mobileContact";
+// import MobileSocials from "./mobileContact";
 import SuccessMessage from "./success";
 
 import { motion } from "framer-motion";
 import useIntersect from "../../utils/useIntersectionObserver";
 
-export default function ContactMe({setIsVisible}: {setIsVisible: () => void}) {
-
-
+export default function ContactMe({
+  setIsVisible,
+}: {
+  setIsVisible: () => void;
+}) {
   // Call the useIntersect hook and receive the setNode and entry variables
   const { entry, setNode } = useIntersect({
     root: null, // The element used as the viewport for checking visibility, null means the browser viewport
@@ -28,7 +30,6 @@ export default function ContactMe({setIsVisible}: {setIsVisible: () => void}) {
       setIsVisible();
     }
   }, [entry?.isIntersecting]);
-
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -65,11 +66,11 @@ export default function ContactMe({setIsVisible}: {setIsVisible: () => void}) {
 
   return (
     <section
-    ref={observeRef}
+      ref={observeRef}
       id="_contact-me"
-      className="relative m-auto my-20 mb-32 flex h-max w-full max-w-[85vw] flex-col items-center justify-between rounded-[15px] bg-dark-100/20 p-8 pb-64 md:my-32 md:max-w-[70vw] md:flex-row md:pb-8"
+      className="relative m-auto my-20 mb-32 flex h-max w-full max-w-[85vw] flex-col flex-wrap items-center justify-between rounded-[15px] bg-dark-100/20 p-8 pb-64 md:my-32 md:max-w-[70vw] md:flex-row md:pb-8"
     >
-      <div className="absolute left-1/2 -top-16 w-[185px] -translate-x-1/2 md:-top-12">
+      <div className="absolute -top-16 left-1/2 w-[185px] -translate-x-1/2 md:-top-12">
         <motion.h2 className="heading-gradient text-lg font-semibold text-white">
           Send me a message
         </motion.h2>
@@ -96,9 +97,9 @@ export default function ContactMe({setIsVisible}: {setIsVisible: () => void}) {
           loading={loading}
         />
       )}
-      <div className="absolute left-1/2 top-[40%] hidden h-[50%] w-[1px] -translate-y-1/2 -translate-x-1/2 heading-gradient-underline md:block" />
       <ShowRealTimeMessage name={name} email={email} message={message} />
-      <MobileSocials />
+      <div className="heading-gradient-underline absolute left-1/2 top-[40%] hidden h-[50%] w-[1px] -translate-x-1/2 -translate-y-1/2 xl:block" />
+      {/* <MobileSocials /> */}
     </section>
   );
 }

@@ -1,27 +1,30 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import useIntersect from "../../utils/useIntersectionObserver";
-
-export default function FirstScreen({setIsVisible} : {setIsVisible: () => void}) {
-   // Call the useIntersect hook and receive the setNode and entry variables
-  const {entry, setNode} = useIntersect({
+import mainimage from "../../assets/me.png";
+export default function FirstScreen({
+  setIsVisible,
+}: {
+  setIsVisible: () => void;
+}) {
+  // Call the useIntersect hook and receive the setNode and entry variables
+  const { entry, setNode } = useIntersect({
     root: null, // The element used as the viewport for checking visibility, null means the browser viewport
-    rootMargin: '0px', // Margin around the root element (in pixels)
+    rootMargin: "0px", // Margin around the root element (in pixels)
     threshold: 0.5, // A threshold value between 0 and 1, indicating the percentage of the target element that should be visible before the callback is invoked
   });
 
-   const observeRef = useRef(null);
+  const observeRef = useRef(null);
 
   useEffect(() => {
-setNode(observeRef.current)
-  }, [])
+    setNode(observeRef.current);
+  }, []);
 
-useEffect(() => {
+  useEffect(() => {
     if (!!entry?.isIntersecting) {
       setIsVisible();
     }
   }, [entry?.isIntersecting]);
-
 
   return (
     <section
@@ -34,34 +37,33 @@ useEffect(() => {
           <p className="text-[18px] font-medium text-white">Hi. I am</p>
           <h1
             id="title"
-            className="title md:text-[62px] text-[48px] tracking-tighter text-white"
+            className="title text-[48px] tracking-tighter text-white md:text-[62px]"
           >
-            Liplan Lekipising
+            Luis Saavedra
           </h1>
-          <p className="md:text-[32px] text-[23px] font-medium tracking-tight text-green">
-            &gt; Software Engineer
+          <p className="text-[23px] font-medium tracking-tight text-green md:text-[32px]">
+            &gt; AI & Fullstack developer
           </p>
         </div>
         <div className="flex flex-col gap-2 italic text-gray-100 md:gap-1">
-          <p>Are you ready to see some web wizardry?</p>
+          <p>Are you ready to see some AI wizardry?</p>
           <p>Scroll down and let me take you on a tour of my craft!</p>
         </div>
       </div>
-      <div className="pic-shadow relative z-50 hidden h-[25vw] w-[25vw] overflow-hidden rounded-full outline outline-green md:block">
+      <div className="pic-shadow relative z-50 hidden h-[20vw] w-[20vw] overflow-hidden rounded-full outline outline-green md:block">
         <Image
-          src={
-            "https://res.cloudinary.com/dpnbddror/image/upload/c_scale,f_auto,h_800/v1697208403/liplan/v4_x34zg3.jpg"
-          }
-          height="300"
-          width="300"
+          src={mainimage}
+          height="200"
+          width="200"
           quality={100}
           priority={true}
-          alt="Liplan Lekipising - Portfolio"
-          className="hover:scale-[1.025] object-left bg-left rounded-full transition-all duration-300 ease-in"
+          alt="Luis Saavedra - Portfolio"
+          className="rounded-full bg-left object-left transition-all duration-300 ease-in hover:scale-[1.025]"
           sizes="100vw"
           style={{
-            width: "100%",
+            width: "auto",
             height: "auto",
+
           }}
         />
       </div>

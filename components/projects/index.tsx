@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { projects } from "./projects";
 
 export interface Technology {
-  svg: string;
   text: string;
 }
 
@@ -117,9 +116,11 @@ function OneProject({ project, index }: { project: Project; index: number }) {
           </div>
 
           <div className="mt-auto flex flex-col gap-6">
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               {project.technologies.map((tech, i) => (
-                <OneTechnology key={i} tech={tech} />
+                <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
+                  {tech.text}
+                </p>
               ))}
             </div>
 
@@ -155,7 +156,7 @@ function OneProject({ project, index }: { project: Project; index: number }) {
             fill
             sizes="100vw"
             style={{
-              objectFit: "cover",
+              objectFit: "contain",
               objectPosition: "center",
             }}
           />
@@ -165,21 +166,21 @@ function OneProject({ project, index }: { project: Project; index: number }) {
   );
 }
 
-function OneTechnology({ tech }: { tech: Technology }) {
-  return (
-    <div className="flex items-center gap-1">
-      <Image
-        src={tech.svg}
-        height="20"
-        width="20"
-        quality={100}
-        alt={tech.text}
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-        }}
-      />
-      <span className="text-[13px] text-white xl:text-[10px]">{tech.text}</span>
-    </div>
-  );
-}
+// function OneTechnology({ tech }: { tech: Technology }) {
+//   return (
+//     <div className="flex items-center gap-1">
+//       <Image
+//         src={tech.svg}
+//         height="20"
+//         width="20"
+//         quality={100}
+//         alt={tech.text}
+//         style={{
+//           maxWidth: "100%",
+//           height: "auto",
+//         }}
+//       />
+//       <span className="text-[13px] text-white xl:text-[10px]">{tech.text}</span>
+//     </div>
+//   );
+// }
