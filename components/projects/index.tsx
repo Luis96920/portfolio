@@ -118,7 +118,7 @@ function OneProject({ project, index }: { project: Project; index: number }) {
           <div className="mt-auto flex flex-col gap-6">
             <div className="flex flex-wrap gap-3">
               {project.technologies.map((tech, i) => (
-                <p className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
+                <p key={i} className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
                   {tech.text}
                 </p>
               ))}

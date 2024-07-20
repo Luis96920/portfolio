@@ -53,7 +53,7 @@ export default function AboutMe({
         large language models (LLMs), Langchain, LLaMa, chatbots, ChatGPT,
         Retrieval-Augmented Generation (RAG), React.js, Next.js, and the MERN
         stack. <br />
-        And that's not all, as a professional who believes in providing the best
+        And that is not all, as a professional who believes in providing the best
         quality service, I can guarantee you error-free work as well as
         unlimited revisions to ensure your utmost satisfaction. <br />
         Please contact me. I will not disappoint you.
