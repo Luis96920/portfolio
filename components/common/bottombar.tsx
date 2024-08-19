@@ -29,7 +29,7 @@ export default function BottomBar() {
       </div>
 
       <a
-        // href="https://github.com/luis96920"
+        href="https://github.com/Luis96920"
         target="_blank"
         rel="noreferrer"
         className="flex h-full cursor-pointer items-center gap-2 border-x-[1px] border-x-gray-200 px-4"
