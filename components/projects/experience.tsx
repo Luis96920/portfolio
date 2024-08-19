@@ -39,6 +39,14 @@ const Experience = () => {
               <span className="text-xs text-gray-100">Mar 2021 - Apr 2024</span>
             </div>
             <p className="text-sm font-medium text-gray-400">AI Developer</p>
+            <p className="text-sm font-medium text-gray-400">
+              - Developed advanced chatbots using ChatGPT and other LLMs,
+              resulting in a significant increase in user engagement and
+              satisfaction.
+              <br />- Implemented Retrieval-Augmented Generation (RAG)
+              techniques to enhance the accuracy and relevance of AI-generated
+              responses.
+            </p>
           </div>
         </motion.div>
         <motion.div
@@ -58,6 +66,19 @@ const Experience = () => {
             <p className="text-sm font-medium text-gray-400">
               Senior Full-Stack Developer
             </p>
+            <p className="text-sm font-medium text-gray-400">
+              - Performed debugging and troubleshooting of issues across the
+              stack, ensuring smooth and efficient application performance.
+              <br />
+              - Successfully led the development of ecommerce site, resulting in
+              a 20% increase in user engagement and benefit.
+              <br />
+              - Reduced application load times by 15% through optimization of
+              front-end and back-end code.
+              <br />- Contributed to the migration of legacy systems to modern
+              frameworks, improving maintainability and scalability.
+              <br />
+            </p>
           </div>
         </motion.div>
         <motion.div
@@ -74,9 +95,7 @@ const Experience = () => {
               <h3 className="font-bold text-gray-100">
                 Universidad Santiago de Cali
               </h3>
-              <span className="text-xs text-gray-100">
-                Nov 2014 - Sep 2018
-              </span>
+              <span className="text-xs text-gray-100">Nov 2014 - Sep 2018</span>
             </div>
             <p className="text-sm font-medium text-gray-400">
               Bachelor of Computer Science

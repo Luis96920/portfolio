@@ -45,18 +45,23 @@ export default function AboutMe({
       </div>
       <br />
       <div className="text-wrap">
-        I am a dedicated and innovative AI and Full Stack Developer with
-        extensive experience in developing cutting-edge AI solutions and
-        building robust, scalable web applications.
-        <br />
-        My expertise spans across a diverse range of technologies, including
-        large language models (LLMs), Langchain, LLaMa, chatbots, ChatGPT,
-        Retrieval-Augmented Generation (RAG), React.js, Next.js, and the MERN
-        stack. <br />
-        And that is not all, as a professional who believes in providing the best
-        quality service, I can guarantee you error-free work as well as
-        unlimited revisions to ensure your utmost satisfaction. <br />
-        Please contact me. I will not disappoint you.
+        With a wave of my code-infused wand, I breathe life into captivating user interfaces, 
+        conjuring immersive experiences that transcend the ordinary.<br />
+        As a maestro of front-end and back-end sorcery, I command the languages of HTML, CSS, 
+        JavaScript, Python with virtuosity, while harnessing the enchanting powers of React,
+        Next.js, Sveltekit, Tailwind, Sass, Typescript and more. <br />
+        But my sorcery doesn't end there! I possess the mystical knowledge of backend alchemy, 
+        wielding the potent forces of Node.js, Express, Django, Ruby on Rails, Laravel, and more.<br />
+        Also I am familiar with  large language models (LLMs), Langchain, NLP, Open AI, Pinecone, 
+        Generative AI, Vector DB.<br />
+        I have built many website using above skill and integrate Chatbot in it.<br />
+        With these powers, I create robust functionalities and seamless interactions that leave 
+        users mesmerized.Step into the magical realm of my portfolio, where you'll witness the spells
+        I've cast and the captivating wonders I've crafted. Whether you seek a magical collaboration, 
+        wish to unlock the secrets of the digital universe, or simply desire to connect with a kindred spirit,
+        I eagerly await your presence! <br />
+
+        Together, let's shape a digital landscape that radiates with wonder and awe!
       </div>
 
       <br />

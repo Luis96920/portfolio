@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 export const scrollIntoId = (id: string) => {
   const element = document.getElementById(id);
+  console.log("111-------------", element);
+  
   if (element) {
     element.scrollIntoView({ behavior: "smooth", block: "center" });
   }
