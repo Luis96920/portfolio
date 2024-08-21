@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import useIntersect from "../../utils/useIntersectionObserver";
-import mainimage from "../../assets/me.png";
+import mainimage from "../../assets/me-1.png";
 export default function FirstScreen({
   setIsVisible,
 }: {

@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "Creating illustrations for presentations, posters, websites, children's books and more.",
       "Allows users to erase parts of an image using text descriptions.",
     ],
-    image: "/portfolio/portfolio-image-gen1.png",
+    image: "/portfolio/ai-image-generator.png",
     link: "https://www.zmo.ai/",
     technologies: [
       {
@@ -71,7 +71,7 @@ export const projects: Project[] = [
         text: "Next.js",
       },
     ],
-    status: "On Hold",
+    status: "Active",
   },
   {
     title: "VozPod",
@@ -109,7 +109,7 @@ export const projects: Project[] = [
         text: "Tailwind CSS",
       },
     ],
-    status: "Completed",
+    status: "Active",
   },
   {
     title: "AIVideoGenerator.me",
@@ -148,7 +148,7 @@ export const projects: Project[] = [
         text: "Tailwind CSS",
       },
     ],
-    status: "Completed",
+    status: "Active",
   },
   {
     title: "Avatar Al",
@@ -187,6 +187,6 @@ export const projects: Project[] = [
         text: "Tailwind CSS",
       },
     ],
-    status: "Completed",
+    status: "Active",
   }
 ];
