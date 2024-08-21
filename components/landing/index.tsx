@@ -58,7 +58,7 @@ export default function FirstScreen({
           quality={100}
           priority={true}
           alt="Luis Saavedra - Portfolio"
-          className="rounded-full bg-left object-left transition-all duration-300 ease-in hover:scale-[1.025]"
+          className="rounded-full bg-left object-cover min-h-full object-center transition-all duration-700 ease-in hover:scale-[1.25]"
           sizes="100vw"
           style={{
             width: "auto",
