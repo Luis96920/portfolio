@@ -181,10 +181,7 @@ export const projects: Project[] = [
         text: "Hugging face",
       },
       {
-        text: "next.js",
-      },
-      {
-        text: "Tailwind CSS",
+        text: "jQuery",
       },
     ],
     status: "Active",
