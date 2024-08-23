@@ -7,9 +7,9 @@ export const projects: Project[] = [
       "Zetabot is a versatile AI chatbot that optimizes customer support operations, reducing costs by up to 60%. With 24/7 instant assistance and personalized interactions, businesses can enhance efficiency, productivity, and customer trust.",
     features: [
       " Automating repetitive tasks.",
-      "Providing instant assistance 24/7.",
-      "Ensuring consistent and dependable responses.",
-      "Offering exceptional customer service across multiple communication channels.",
+      " Providing instant assistance 24/7.",
+      " Ensuring consistent and dependable responses.",
+      " Offering exceptional customer service across multiple communication channels.",
     ],
     image: "/portfolio/portfolio-chatbot-business.png",
     link: "https://zetabot.co/",
@@ -30,10 +30,10 @@ export const projects: Project[] = [
         text: "RAG",
       },
       {
-        text: "React.js",
+        text: "Next.js",
       },
       {
-        text: "Next.js",
+        text: "MUI",
       },
     ],
     status: "Active",
@@ -45,16 +45,12 @@ export const projects: Project[] = [
     features: [
       " Generates images based on text descriptions.",
       " Ideal for creating photo-realistic stock photos.",
-      "Editing photos using text descriptions.",
-      "Creating illustrations for presentations, posters, websites, children's books and more.",
-      "Allows users to erase parts of an image using text descriptions.",
+      " Editing photos using text descriptions.",
+      " Allows users to erase parts of an image using text descriptions.",
     ],
     image: "/portfolio/ai-image-generator.png",
     link: "https://www.zmo.ai/",
     technologies: [
-      {
-        text: "Python",
-      },
       {
         text: "LLM",
       },
@@ -68,7 +64,10 @@ export const projects: Project[] = [
         text: "AWS",
       },
       {
-        text: "Next.js",
+        text: "Nuxt.js",
+      },
+      {
+        text: "Wordpress",
       },
     ],
     status: "Active",
@@ -114,7 +113,7 @@ export const projects: Project[] = [
   {
     title: "AIVideoGenerator.me",
     description:
-      "AIVideoGenerator.me is a Luma AI Video Generator, an advanced AI tool that allows users to create realistic videos quickly from text prompts.Whether you aim to generate drone shots or various video styles, this video generation AI offers a wide range of possibilities for both personal and professional use.The tool is accessible to everyone, providing high-quality video generation capabilities.Powered by Luma Labs' expertise in AI technologies, this Luma to text video generator is very easy to use.",
+      "AIVideoGenerator.me is a Luma AI Video Generator, an advanced AI tool that allows users to create realistic videos quickly from text prompts.Whether you aim to generate drone shots or various video styles, this video generation AI offers a wide range of possibilities for both personal and professional use.",
     features: [
       " AI video generation from text prompts.",
       " Ability to create realistic videos.",
@@ -142,7 +141,7 @@ export const projects: Project[] = [
         text: "Hugging face",
       },
       {
-        text: "next.js",
+        text: "Next.js",
       },
       {
         text: "Tailwind CSS",

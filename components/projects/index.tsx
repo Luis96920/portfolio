@@ -47,13 +47,13 @@ export default function Projects({
   }, [entry?.isIntersecting]);
 
   return (
-    <section
-      id="_projects"
-      ref={observeRef}
-      className="relative m-auto mb-32 mt-20 flex max-w-[95%] flex-col justify-center gap-12 py-8 pb-[10rem] md:relative md:mt-0 md:flex-row md:gap-5  md:py-32 md:pb-[0rem]"
-    >
+    <section className="relative m-auto mb-32 mt-20 flex max-w-[95%] flex-col justify-center gap-12 py-8 pb-[10rem] md:relative md:mt-0 md:flex-row md:gap-5  md:py-32 md:pb-[0rem]">
       <div className="absolute -top-12 left-1/2 w-full -translate-x-1/2 text-center md:top-12 md:w-[520px] md:text-left">
-        <motion.h2 className="heading-gradient mx-auto text-lg font-semibold text-white">
+        <motion.h2
+          id="_projects"
+          ref={observeRef}
+          className="heading-gradient mx-auto text-lg font-semibold text-white"
+        >
           Adventures in Development: <br className="block md:hidden" /> Top
           Personal Projects
         </motion.h2>
@@ -89,7 +89,7 @@ function OneProject({ project, index }: { project: Project; index: number }) {
       className="group w-full"
       id={`project-${project.title.toLowerCase().replace(" ", "-")}`}
     >
-      <div className="project relative flex h-[800px] flex-col justify-between gap-8 rounded-[10px] border-[1px] border-gray-200 bg-dark-300 p-6 transition-all duration-300 ease-in lg:h-[500px] lg:flex-row lg:gap-0">
+      <div className="project relative flex flex-col justify-between gap-8 rounded-[10px] border-[1px] border-gray-200 bg-dark-300 p-6 transition-all duration-300 ease-in lg:flex-row lg:gap-0">
         <div className="flex w-full flex-col gap-6 lg:w-[45%]">
           <h3 className="text-[20px] font-bold text-gray-300">
             {project.title}
@@ -116,9 +116,12 @@ function OneProject({ project, index }: { project: Project; index: number }) {
           </div>
 
           <div className="mt-auto flex flex-col gap-6">
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, i) => (
-                <p key={i} className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70">
+                <p
+                  key={i}
+                  className="asterisk text-yellow transition-all duration-300 ease-in hover:text-white/70"
+                >
                   {tech.text}
                 </p>
               ))}
@@ -150,15 +153,11 @@ function OneProject({ project, index }: { project: Project; index: number }) {
         >
           <Image
             src={project.image}
-            className="rounded-[10px]"
+            className="relative aspect-auto w-full rounded-[10px] object-contain object-center"
             alt={project.title}
             onLoad={() => setImageLoaded(true)}
-            fill
-            sizes="100vw"
-            style={{
-              objectFit: "contain",
-              objectPosition: "center",
-            }}
+            width={900}
+            height={600}
           />
         </motion.div>
       </div>

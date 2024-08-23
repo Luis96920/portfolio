@@ -44,7 +44,7 @@ export default function MobileMenu({
           setOpenMenu();
           scrollIntoId("_contact-me");
         }}
-        className={`flex h-[50px] cursor-pointer items-center border-[0.5px] border-gray-200  px-4  text-left transition-all duration-150 ease-in hover:text-yellow `}
+        className={`flex h-[50px] cursor-pointer items-center border-[0.5px] border-gray-200  px-4  text-left transition-all duration-150 ease-in hover:text-yellow`}
       >
         _contact-me
       </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const scrollIntoId = (id: string) => {
   const element = document.getElementById(id);
-  console.log("111-------------", element);
+  console.log("111-------------", element.id);
   
   if (element) {
     element.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -23,7 +23,7 @@ export default function NavBar({ activeSection }: { activeSection: string }) {
           @ Luis Saavedra
         </span>
       </nav>
-      <nav className="hidden h-full flex-wrap items-center gap-2 md:flex">
+      <nav className="hidden h-full flex-wrap items-center gap-2 lg:flex">
         <OneNavItem
           text="_hello"
           delay={1}
